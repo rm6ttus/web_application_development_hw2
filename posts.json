@@ -53,6 +53,61 @@
         "content": "Great turnout at the welcome campus barbecue event today! Amazing food and music.",
         "media": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaOoxP2HIgG5i62Ms6ggoACeFXsvr-L1rnOrWT2zJQQg&s=10",
         "likes": 58 
+    },
+    {
+        "id": 6,
+        "author": {
+            "name": "Emily Watson",
+            "avatar": "images/user_avatar.png"
+        },
+        "createTime": "2026-10-28T16:20:00Z",
+        "content": "Freshly baked cinnamon rolls and coffee to keep the late-night coding going. ☕🥐",
+        "media": "https://sallysbakingaddiction.com/wp-content/uploads/2013/05/easy-soft-cinnamon-rolls-2.jpg",
+        "likes": 31
+    },
+    {
+        "id": 7,
+        "author": {
+            "name": "Kert Tamm",
+            "avatar": "images/user_avatar.png"
+        },
+        "createTime": "2026-10-27T08:11:05Z",
+        "content": "Does anyone have notes from yesterday's web development lecture?",
+        "media": null,
+        "likes": 3
+    },
+    {
+        "id": 8,
+        "author": {
+            "name": "Laura Smith",
+            "avatar": "images/user_avatar.png"
+        },
+        "createTime": "2026-10-26T19:50:12Z",
+        "content": "Evening jog along the Emajõgi river. Autumn vibes are unmatched!",
+        "media": "https://www.kalapeedia.ee/u/veekogud/Emaj%C3%B5gi%20Tartus%20suurvee%20ajal.jpg",
+        "likes": 19
+    },
+    {
+        "id": 9,
+        "author": {
+            "name": "Marten Kuusk",
+            "avatar": "images/user_avatar.png"
+        },
+        "createTime": "2026-10-24T12:00:00Z",
+        "content": "Board game night this Friday at the student lounge! Bring your favorite games.",
+        "media": null,
+        "likes": 15
+    },
+    {
+        "id": 10,
+        "author": {
+            "name": "Sophia Martinez",
+            "avatar": "images/user_avatar.png"
+        },
+        "createTime": "2026-10-20T11:45:30Z",
+        "content": "Finally submitted my project report! Time to celebrate with some pizza.",
+        "media": "https://uspizza.in/assets/images/tasty-pizza-hand.webp",
+        "likes": 47
     }
 ]
 

@@ -13,98 +13,25 @@
             <a href="addPost.html">Add Post</a>
             <a href="login.html">Login</a>
         </nav>
-        <img src="images/user_avatar.png" alt="Avatar" class="avatar-img">
+
+        <div class="user-menu-container">
+            <img src="images/user_avatar.png" alt="Avatar" class="avatar-img" id="avatar-btn">
+            <div id="user-dropdown" class="dropdown-content">
+                <p class="dropdown-name">John Doe</p>
+                <p class="dropdown-email">john.doe@ut.ee</p>
+                <a href="login.html" class="dropdown-logout">logout</a>
+            </div>
+        </div>
     </header>
 
     <div class="container">
         <aside>
             <h2>Navigation Sidebar</h2>
-            <p>Welcome to your campus feed!</p>
+            <p>Welcome to your campus feed!</p> 
         </aside>
 
-        <main>
-            <div class="welcome-banner">
-                <h1>Campus Feed</h1>
-                <p>Latest updates and posts from students and faculty.</p>
-            </div>
+        <main id="posts-feed">
 
-            <article class="post">
-                <div class="post-header">
-                    <div class="post-user">
-                        <img src="images/user_avatar.png" alt="Avatar" class="avatar-img">
-                        <h2 class="post-author">John Doe</h2>
-                    </div>
-                    <time datetime="2026-10-03">Oct 3, 2026</time>
-                </div>
-                <p>Tartu 2024 - Beautiful autumn day exploring the city center and cultural monuments!</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX63naz52LHLcVyaYgZop-ExZRuWwlRUwRe38ha9CY8g&s=10" alt="Tartu cityscape" class="post-image">
-                <div class="post-footer">
-                    <span>24 Likes</span>
-                    <button class="like-btn">Like</button>
-                </div>
-            </article>
-
-            <article class="post">
-                <div class="post-header">
-                    <div class="post-user">
-                        <img src="images/user_avatar.png" alt="Avatar" class="avatar-img">
-                        <h2 class="post-author">Anna Naan</h2>
-                    </div>
-                    <time datetime="2026-10-02">Oct 2, 2026</time>
-                </div>
-                <p>Just spent like an hour sleeping in lecture.</p>
-                <div class="post-footer">
-                    <span>5 Likes</span>
-                    <button class="like-btn">Like</button>
-                </div>
-            </article>
-
-            <article class="post">
-                <div class="post-header">
-                    <div class="post-user">
-                        <img src="images/user_avatar.png" alt="Avatar" class="avatar-img">
-                        <h2 class="post-author">Michael Brown</h2>
-                    </div>
-                    <time datetime="2026-09-28">Sep 28, 2026</time>
-                </div>
-                <p>Library study session in full swing before the midterm exams next week. Good luck everyone!</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoPAQkvJu2GfvRjXj6Il3q_ecyTgpstng9rkN1BiuKag&s=10" alt="University Library" class="post-image">
-                <div class="post-footer">
-                    <span>42 Likes</span>
-                    <button class="like-btn">Like</button>
-                </div>
-            </article>
-
-            <article class="post">
-                <div class="post-header">
-                    <div class="post-user">
-                        <img src="images/user_avatar.png" alt="Avatar" class="avatar-img">
-                        <h2 class="post-author">Sarah Connor</h2>
-                    </div>
-                    <time datetime="2026-09-25">Sep 25, 2026</time>
-                </div>
-                <p>Looking for teammates for the upcoming hackathon. We need one more frontend developer. DM me if interested!</p>
-                <div class="post-footer">
-                    <span>12 Likes</span>
-                    <button class="like-btn">Like</button>
-                </div>
-            </article>
-
-            <article class="post">
-                <div class="post-header">
-                    <div class="post-user">
-                        <img src="images/user_avatar.png" alt="Avatar" class="avatar-img">
-                        <h2 class="post-author">David Lee</h2>
-                    </div>
-                    <time datetime="2026-09-20">Sep 20, 2026</time>
-                </div>
-                <p>Great turnout at the welcome campus barbecue event today! Amazing food and music.</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaOoxP2HIgG5i62Ms6ggoACeFXsvr-L1rnOrWT2zJQQg&s=10" alt="Campus event" class="post-image">
-                <div class="post-footer">
-                    <span>58 Likes</span>
-                    <button class="like-btn">Like</button>
-                </div>
-            </article>
         </main>
 
         <aside>
@@ -114,6 +41,7 @@
     </div>
 
     <footer>
+        <script src="script.js"></script>
         <p>&copy; 2026 PostIt. All rights reserved.</p>
     </footer>
 </body>

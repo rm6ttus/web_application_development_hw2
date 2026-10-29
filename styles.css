@@ -318,3 +318,46 @@ footer {
 .form-group ~ button {
     cursor: pointer;
 }
+
+/* Container for avatar and dropdown */
+.user-menu-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Dropdown menu box */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: var(--card-bg);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 4px;
+    padding: 8px 0;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content p, 
+.dropdown-content a {
+    color: #333;
+    padding: 6px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    margin: 0;
+}
+
+.dropdown-content .dropdown-name {
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--hover-color);
+}
