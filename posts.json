@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "author": {
+            "name": "John Doe",
+            "avatar": "images/user_avatar.png"
+        },
+        "createTime": "2026-10-03T10:15:00Z",
+        "content": "Tartu 2024 - Beautiful autumn day exploring the city center and cultural monuments!",
+        "media": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX63naz52LHLcVyaYgZop-ExZRuWwlRUwRe38ha9CY8g&s=10",
+        "likes": 24
+    },
+    {
+        "id": 2,
+        "author": {
+            "name": "Anna Naan",
+            "avatar": "images/user_avatar.png"
+        },
+        "createTime": "2026-10-02T18:42:10Z",
+        "content": "Just spent like an hour sleeping in lecture.",
+        "media": null,
+        "likes": 5
+    },
+    {
+        "id": 3,
+        "author": {
+            "name": "Michael Brown",
+            "avatar": "images/user_avatar.png"
+        },
+        "createTime": "2026-09-28T21:05:45Z",
+        "content": "Library study session in full swing before the midterm exams next week. Good luck everyone!",
+        "media": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoPAQkvJu2GfvRjXj6Il3q_ecyTgpstng9rkN1BiuKag&s=10",
+        "likes": 42
+    },
+    {
+        "id": 4,
+        "author": {
+            "name": "Sarah Connor",
+            "avatar": "images/user_avatar.png"
+        },
+        "createTime": "2026-10-25T14:30:00Z",
+        "content": "Looking for teammates for the upcoming hackathon. We need one more frontend developer. DM me if interested!",
+        "media": null,
+        "likes": 12
+    },
+    {
+        "id": 5,
+        "author": {
+            "name": "David Lee",
+            "avatar": "images/user_avatar.png"
+        },
+        "createTime": "2026-09-20T09:12:33Z",
+        "content": "Great turnout at the welcome campus barbecue event today! Amazing food and music.",
+        "media": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaOoxP2HIgG5i62Ms6ggoACeFXsvr-L1rnOrWT2zJQQg&s=10",
+        "likes": 58 
+    }
+]
+
