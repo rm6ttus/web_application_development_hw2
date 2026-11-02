@@ -130,16 +130,3 @@ if (avatarBtn && userDropdown) {
     });
 }
 
-// Fix for "405 Not Allowed" error when using HTML method POST
-document.addEventListener('DOMContentLoaded', () => {
-    // Selects EVERY form on your pages (both login-form and post-form)
-    const allForms = document.querySelectorAll('form');
-
-    allForms.forEach(form => {
-        form.addEventListener('submit', (event) => {
-            event.preventDefault(); // Stops the browser from navigating and throwing 405
-            console.log("Form submission successfully intercepted!");
-        });
-    });
-});
-
