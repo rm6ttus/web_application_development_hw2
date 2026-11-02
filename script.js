@@ -1,4 +1,3 @@
-// Function to dynamically create and render the webpage elements matching your JSON structure
 function renderPosts(posts) {
     const feedContainer = document.getElementById('posts-feed');
     
@@ -11,11 +10,10 @@ function renderPosts(posts) {
     `;
 
     posts.forEach(post => {
-        // Create the <article class="post"> element
         const article = document.createElement('article');
         article.className = 'post';
 
-        // 1. Post Header
+        // Post Header
         const postHeader = document.createElement('div');
         postHeader.className = 'post-header';
 
@@ -35,8 +33,7 @@ function renderPosts(posts) {
         postUser.appendChild(authorH2);
 
         const timeTag = document.createElement('time');
-        // Using createTime from your JSON
-        const formattedDate = post.createTime ? post.createTime.split('T')[0] : '2026-10-03';
+        const formattedDate = post.createTime ? post.createTime.split('T')[0] : 'Unknown Date';
         timeTag.setAttribute('datetime', formattedDate);
         timeTag.textContent = formattedDate;
 
@@ -44,12 +41,12 @@ function renderPosts(posts) {
         postHeader.appendChild(timeTag);
         article.appendChild(postHeader);
 
-        // 2. Post Content Paragraph
+        // Post Content Paragraph
         const contentP = document.createElement('p');
         contentP.textContent = post.content;
         article.appendChild(contentP);
 
-        // 3. Optional Media/Image (using 'media' property from your JSON)
+        // Media/Image
         if (post.media) {
             const postImg = document.createElement('img');
             postImg.src = post.media;
@@ -58,37 +55,30 @@ function renderPosts(posts) {
             article.appendChild(postImg);
         }
 
-        // 4. Post Footer (Likes and Like Button)
+        // Post Footer (Likes and Like Button)
         const postFooter = document.createElement('div');
         postFooter.className = 'post-footer';
 
         const likesSpan = document.createElement('span');
-        const likesCount = post.likes !== undefined ? post.likes : 0;
+        const likesCount = post.likes;
         likesSpan.textContent = `${likesCount} Likes`;
 
         const likeBtn = document.createElement('button');
         likeBtn.className = 'like-btn';
         likeBtn.textContent = 'Like';
-        
-        // Interactive like functionality
-        likeBtn.addEventListener('click', () => {
-            likesSpan.textContent = `${likesCount + 1} Likes`;
-            likeBtn.disabled = true;
-        });
 
         postFooter.appendChild(likesSpan);
         postFooter.appendChild(likeBtn);
         article.appendChild(postFooter);
 
-        // Append the fully constructed post article into the main feed container
         feedContainer.appendChild(article);
     });
 }
 
 
-// --- TASK 4: Fetch from the online source (Commented out as requested in Task 5) ---
+// Fetch from the online source
 /*
-fetch('https://jsonhosting.com/api/json/2e19da6d')
+fetch('https://gist.githubusercontent.com/ameriloo/1fcb8a4eb011c2bc1bbccafe3810d132/raw/c65a8b948eb3d17ad2ef6c434420daf977dc0754/gistfile1.txt')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -96,17 +86,16 @@ fetch('https://jsonhosting.com/api/json/2e19da6d')
         return response.json();
     })
     .then(posts => {
-        console.log("Successfully fetched posts from online endpoint:", posts);
+        console.log("Posts downloaded successfully:", posts);
         renderPosts(posts);
     })
     .catch(error => {
-        console.error('Error fetching the JSON data:', error);
+        console.error('Error fetching posts:', error);
     });
 */
 
-
-// --- TASK 5: Fetch from the local JSON file integrated into your project ---
-fetch('posts.json') // Make sure your local JSON file is named 'posts.json' in your folder
+// Fetch from the local JSON file integrated into your project
+fetch('posts.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -121,8 +110,8 @@ fetch('posts.json') // Make sure your local JSON file is named 'posts.json' in y
         console.error('Error fetching the local JSON data:', error);
     });
 
-    
-// --- TASK 7: Dropdown Menu Toggle Functionality ---
+
+// Dropdown Menu Toggle Functionality
 const avatarBtn = document.getElementById('avatar-btn');
 const userDropdown = document.getElementById('user-dropdown');
 
